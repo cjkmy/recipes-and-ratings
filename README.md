@@ -66,11 +66,21 @@ This histogram shows the column 'n_ingredients'. It illustrates the total number
   frameborder="0"
 ></iframe>
 
-<<<<<<< HEAD
+
 ### Bivariate Analysis
 
+This scatterplot shows the columns 'calories' and 'avg_rating' and their possible relationship. The plot illustrates how there are more recipes with lower calories, but also shows that lower-calorie recipes tend to have a higher average rating. 
+
+<iframe
+  src="assets/bivariate_analysis.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
 
 ### Aggregates
+
+This grouped table shows the mean calories and average rating based on the number of ingredients in a recipe. This graph entails an important connection between the three columns, alluding to the possibility of the columns being dependent columns. 
 |   n_ingredients |   avg_rating |   calories |
 |----------------:|-------------:|-----------:|
 |               1 |      4.84091 |    274.892 |
@@ -106,6 +116,50 @@ This histogram shows the column 'n_ingredients'. It illustrates the total number
 |              31 |      5       |    760.688 |
 |              32 |      5       |    697.35  |
 |              33 |      5       |    338.2   |
-=======
 
->>>>>>> 75ec286a04edab5206eeacaa6dabd7c1b7b27acc
+### ASSESSMENT OF MISSINGNESS
+### Not Missing At Random (NMAR) Analysis
+
+There are three columns in the `recipe` data frame, `'name'`, `'description'`, and `'avg_rating'`, which could all possibly be Not Missing At Random (NMAR), assuming the following conditions:
+- `'name'`: Users may choose not to provide a name if the recipe is simple or something very common. In this case, the missingness depends on the type of name the recipe would have had. 
+- `'description'`: Similarly to the recipe names, users may choose not to describe if the recipe doesn't need any description due to its simplicity or self-explanatory. This makes the missingness depend on what would submitted to describe the recipe.
+- `'avg_rating'`: People may have not rated the recipes, possibly due to not having tried them or having a negative experience. This makes the missingness tied to the user's unobserved actions, resulting in NMAR.
+
+All three conditions rely on the idea that unobserved values explain why the data is missing, which is characteristic of NMAR.
+
+### Missingness Dependency
+
+I used permutation testing to evaluate whether the two columns, 'avg rating' and 'calories', are dependent on each other. Through the permutation testing, a p-value of 0.000999000999000999 was evaluated concluding that under a significance level of 0.05 the missingness of 'avg rating' is dependent on the 'calorie' column. This is further elaborated through the graph showing that as calories increase there are a lot more average rating values missing.
+
+<iframe
+  src="assets/missingness_dependency.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+### HYPOTHESIS TESTING
+
+### Hypotheses
+
+Null Hypothesis: The mean calories for low-rated recipes is greater than or equal to the mean calories for high-rated recipes.
+
+Alternative Hypothesis: The mean calories for low-rated recipes is less than that of high-rated recipes.
+
+### Test Method
+A permutation test was conducted with the following steps:
+- Recipes are split into 2 groups based on ratings: low-rated: < 3, high-rated: => 3
+- Test Statistic: mean of low-rated - mean of high-rated
+- Shuffling 1000 times
+- Significance Level: 0.05
+
+### Test Result
+Observed Mean Difference: 0.7628970266521833
+p_value: 0.538
+Reject or Fail to Reject: Fail to reject the null hypothesis
+
+Since the p_value > significance level, there is no statistical significance to suggest that low-rated recipes have fewer calories than high-rated recipes. Any difference in calories happened by chance and is unlikely to reflect accurate real events. 
+
+The test statistic for this test is the mean difference between the mean calories for low-rated recipes and the mean calories for high-rated recipes and a significance level of 0.05.
+
+This test is appropriate because it allows me to compare the mean calories of two different groups without assuming any specific distribution of the data. It addresses whether the observed difference is statistically unusual, helping with my investigation about which types of recipes tend to have more calories. This shows the relationship between the two groups and possibly providing a partial solution to my investigative question!
