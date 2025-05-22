@@ -36,3 +36,12 @@ There are four segments or rather four steps consisting of several lines of code
 1. Merging and Using Data Frames 
    
    I've merged `RAW_recipes.csv` and `interaction.csv` using the recipe names and preserving all rows (recipes) from the first data frame. I then used the merged dataset to calculate for 'avg_rating_per_recipe', which serves as a new column for the recipe data frame for usage in the rest of the analysis.
+
+2. Converting Strings
+
+   The `RAW_recipes.csv` is needed for several columns to be converted from strings. The 'submitted' column was converted to date-times, and the columns' nutrition, tags, steps, and ingredients were all converted into functioning lists.
+
+3. Minimizing the Data Frame
+
+   To prevent any outlandish statistics, I've decided to filter the recipe data frame to only include recipes with less than 3,000 calories to adhere to realistic 1-serving sizes. Since some of the recipes have calories to the hundreds of thousands, there could be user error when inputting values and/or too big of serving sizes. The primary goal is to prevent extreme data from heavily skewing the analysis results.
+
