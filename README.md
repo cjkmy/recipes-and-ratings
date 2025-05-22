@@ -34,4 +34,5 @@ The two following datasets are available for this investigation:
 ### Steps Taken To Clean The Data 
 There are four segments or rather four steps consisting of several lines of code for each step.
 1. Merging Data Frames
+   
    I've merged `RAW_recipes.csv` and `interaction.csv` using the recipe names and preserving all columns from the recipe data frame.
