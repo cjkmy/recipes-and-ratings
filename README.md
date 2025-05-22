@@ -2,7 +2,7 @@
 
 ## Investigation Question: What types of recipes tend to have the most calories?
 
-### This study is helpful for people who may be trying to watch their calorie intakes while still being able to enjoy various types of delicious recipes. There are two initial datasets that this study will be using one containing information about the recipes, and the other containing reviews of recipes in the first dataset - it will be combined to form one big dataset keeping all the recipes with reviews.
+### INTRODUCTION: This study is helpful for people who may be trying to watch their calorie intakes while still being able to enjoy various types of delicious recipes. There are two initial datasets that this study will be using one containing information about the recipes, and the other containing reviews of recipes in the first dataset - it will be combined to form one big dataset keeping all the recipes with reviews.
 
 
 ### Dataset
