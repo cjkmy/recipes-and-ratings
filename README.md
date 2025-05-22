@@ -33,6 +33,6 @@ The two following datasets are available for this investigation:
 ### DATA CLEANING AND EXPLORATORY ANALYSIS
 ### Steps Taken To Clean The Data 
 There are four segments or rather four steps consisting of several lines of code for each step.
-1. Merging Data Frames
+1. Merging and Using Data Frames 
    
-   I've merged `RAW_recipes.csv` and `interaction.csv` using the recipe names and preserving all columns from the recipe data frame.
+   I've merged `RAW_recipes.csv` and `interaction.csv` using the recipe names and preserving all rows (recipes) from the first data frame. I then used the merged dataset to calculate for 'avg_rating_per_recipe', which serves as a new column for the recipe data frame for usage in the rest of the analysis.
