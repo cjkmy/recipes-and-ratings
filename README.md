@@ -81,6 +81,7 @@ This scatterplot shows the columns 'calories' and 'avg_rating' and their possibl
 ### Aggregates
 
 This grouped table shows the mean calories and average rating based on the number of ingredients in a recipe. This graph entails an important connection between the three columns, alluding to the possibility of the columns being dependent columns. 
+
 |   n_ingredients |   avg_rating |   calories |
 |----------------:|-------------:|-----------:|
 |               1 |      4.84091 |    274.892 |
