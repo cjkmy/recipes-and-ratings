@@ -66,3 +66,6 @@ This histogram shows the column 'n_ingredients'. It illustrates the total number
   frameborder="0"
 ></iframe>
 
+<iframe src="https://cjkmy.github.io/recipes-and-ratings/assets/univariate_analysis.html" style="width: 100%; height: 600px;" frameborder="0"></iframe>
+
+
