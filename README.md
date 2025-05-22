@@ -60,7 +60,7 @@ This is how the resulting data frame that will be used for analysis will look li
 This histogram shows the column 'n_ingredients'. It illustrates the total number of recipes with n number of ingredients. It is to be highlighted that this histogram is slightly skewed right, conveying that the majority of the recipes have between 2-16 ingredients in total.  
 
 <iframe
-  src="assets/univariate_analysis.html"
+  src="https://cjkmy.github.io/recipes-and-ratings/assets/univariate_analysis.html"
   width="800"
   height="600"
   frameborder="0"
