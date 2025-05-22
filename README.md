@@ -21,10 +21,12 @@ The two following datasets are available for this investigation:
    - `description`: describes what the recipe makes 
    - `ingredients`: a list of items used to create the final product
    - `n_ingredients`: the number of ingredients needed for the recipe
-<br>
+
 2. `interactions.csv`: a DataFrame that consists of information regarding people's reviews of certain recipes with 4 columns, indexed by user_id:
 
    - `recipe_id`: a series of numbers serving as identification that differentiates each recipe
    - `date`: the data of the review being sent formatted as MM/DD/YYYY
    - `rating`: a rating out of 5 for the recipe
    - `review`: comments made by the reviewer about the recipe
+
+There
