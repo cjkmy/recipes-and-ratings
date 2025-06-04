@@ -1,4 +1,4 @@
-# Recipes and Rating 🍽️
+# Guide to the Relationship of Calories and Cooking! 🍽️
 
 ## Investigation Question: What types of recipes tend to have the most calories?
 
